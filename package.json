@@ -1,0 +1,23 @@
+{
+  "name": "stream-deck-icon-designer",
+  "version": "1.0.0",
+  "description": "",
+  "watch": {
+    "scss": {
+      "patterns": ["public/scss"],
+      "extensions": "scss",
+      "delay": 1000
+    }
+  },
+  "scripts": {
+    "build:sass": "sleep 0.5 && node-sass-chokidar -r --output-style compressed public/scss/style.scss -o public/css",
+    "scss": "npm run build:sass",
+    "watch": "npm-watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass-chokidar": "^2.0.0",
+    "npm-watch": "^0.11.0"
+  }
+}
