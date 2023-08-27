@@ -1,0 +1,40 @@
+{
+  "name": "npm-watch",
+  "version": "0.11.0",
+  "description": "run scripts from package.json when files change",
+  "main": "index.js",
+  "dependencies": {
+    "nodemon": "^2.0.7",
+    "through2": "^4.0.2"
+  },
+  "devDependencies": {
+    "crlf": "^1.1.1"
+  },
+  "bin": "./cli.js",
+  "scripts": {
+    "prepublish": "crlf --set=LF cli.js watch-package.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/M-Zuber/npm-watch.git"
+  },
+  "bugs": {
+    "type": "git",
+    "url": "git://github.com/M-Zuber/npm-watch/issues"
+  },
+  "homepage": "https://github.com/M-Zuber/npm-watch",
+  "keywords": [
+    "npm",
+    "watch",
+    "nodemon",
+    "monitor"
+  ],
+  "maintainers": [
+    {
+      "name": "Mordechai Zuber",
+      "email": "mez613+npmwatch@gmail.com"
+    }
+  ],
+  "author": "Stephen Sugden <me@stephensugden.com>",
+  "license": "MIT"
+}

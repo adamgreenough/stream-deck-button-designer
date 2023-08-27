@@ -1,0 +1,12 @@
+{
+  "actions" : {
+    "build" : {
+      "enabled" : true,
+      "script" : "npm install"
+    },
+    "run" : {
+      "enabled" : true,
+      "script" : "npm run watch"
+    }
+  }
+}
