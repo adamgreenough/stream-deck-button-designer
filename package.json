@@ -4,13 +4,15 @@
   "description": "",
   "watch": {
     "scss": {
-      "patterns": ["public/scss"],
+      "patterns": [
+        "scss"
+      ],
       "extensions": "scss",
       "delay": 1000
     }
   },
   "scripts": {
-    "build:sass": "sleep 0.5 && node-sass-chokidar -r --output-style compressed public/scss/style.scss -o public/css",
+    "build:sass": "sleep 0.5 && node-sass-chokidar -r --output-style compressed scss/style.scss -o css",
     "scss": "npm run build:sass",
     "watch": "npm-watch"
   },
@@ -19,5 +21,8 @@
   "dependencies": {
     "node-sass-chokidar": "^2.0.0",
     "npm-watch": "^0.11.0"
+  },
+  "devDependencies": {
+    "node-sass": "^9.0.0"
   }
 }
